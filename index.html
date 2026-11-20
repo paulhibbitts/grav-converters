@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Convert Pressbooks books and Common Cartridge LMS exports (Canvas, Moodle, Brightspace, Blackboard) to Markdown files for Grav Open Course Space and Open Publishing Space, or Grav Helios Course Hub and Open Reader – or standard, portable Markdown for other platforms – and move open guides and courses between Grav and Docsify.">
+<meta name="description" content="Convert Pressbooks books and LMS course exports to Markdown for Grav Open Publishing Space, Open Course Space or Helios, and move open guides and courses between Grav and Docsify.">
 <link rel="canonical" href="https://grav-converters.hibbittsdesign.org/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://grav-converters.hibbittsdesign.org/">
-<meta property="og:title" content="Grav Converters – Convert Pressbooks and LMS Content to Open Markdown, and Move Docsify Sites">
-<meta property="og:description" content="Convert Pressbooks books and Common Cartridge LMS exports (Canvas, Moodle, Brightspace, Blackboard) to Markdown files for Grav Open Course Space and Open Publishing Space, or Grav Helios Course Hub and Open Reader – or standard, portable Markdown for other platforms – and move open guides and courses between Grav and Docsify.">
+<meta property="og:title" content="Grav Converters – for Pressbooks Books, LMS Courses and Docsify Sites">
+<meta property="og:description" content="Convert Pressbooks books and LMS course exports to Markdown for Grav Open Publishing Space, Open Course Space or Helios, and move open guides and courses between Grav and Docsify.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Grav Converters – Convert Pressbooks and LMS Content to Open Markdown, and Move Docsify Sites">
-<meta name="twitter:description" content="Convert Pressbooks books and Common Cartridge LMS exports (Canvas, Moodle, Brightspace, Blackboard) to Markdown files for Grav Open Course Space and Open Publishing Space, or Grav Helios Course Hub and Open Reader – or standard, portable Markdown for other platforms – and move open guides and courses between Grav and Docsify.">
-<title>Grav Converters – Convert Pressbooks and LMS Content to Open Markdown, and Move Docsify Sites</title>
+<meta name="twitter:title" content="Grav Converters – for Pressbooks Books, LMS Courses and Docsify Sites">
+<meta name="twitter:description" content="Convert Pressbooks books and LMS course exports to Markdown for Grav Open Publishing Space, Open Course Space or Helios, and move open guides and courses between Grav and Docsify.">
+<title>Grav Converters – for Pressbooks Books, LMS Courses and Docsify Sites</title>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -256,39 +256,6 @@
   .intro strong { color: var(--text-subtle); }
   .intro a { color: var(--link); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
   .intro a:hover { color: var(--text); }
-
-  /* ── Feature callout ── */
-  .feature-callout {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem 1.1rem;
-    margin-bottom: 1.75rem;
-    max-width: 41.6rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .feature-callout-badge {
-    display: inline-block;
-    font-size: 0.6875rem;
-    font-weight: 600;
-    padding: 3px 7px;
-    border-radius: 99px;
-    background: var(--hub-badge-bg);
-    color: var(--hub-badge-text);
-    letter-spacing: 0.02em;
-    flex-shrink: 0;
-    margin-top: 0.15rem;
-  }
-  .feature-callout-text {
-    font-size: 1rem;
-    color: var(--text-subtle);
-    line-height: 1.6;
-  }
-  .feature-callout-text strong { color: var(--text); }
 
   /* ── Cards ── */
   .cards { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.75rem; max-width: 41.6rem; margin-left: auto; margin-right: auto; }
@@ -586,7 +553,7 @@
           </div>
         </div>
         <p class="card-desc">
-          Move open guides and courses between Grav and Docsify, in either direction: bring a Docsify site into Grav from its GitHub address, or turn your Grav guides or courses (one course, or a whole site of them) into plain Markdown pages for Docsify. Pages, images, callouts, embeds and settings all carried across – and converting to Docsify and back gives you the same pages.
+          Bring a Docsify site into Grav from its GitHub address, or turn your Grav guides or courses (one course, or a whole site of them) into plain Markdown pages for Docsify. Pages, images, callouts, embeds and settings all carried across.
         </p>
         <div class="card-action">
           <a href="https://open-publishing-course-space-bridge.hibbittsdesign.org/" class="btn btn--reader">
@@ -619,16 +586,13 @@
   <!-- More about the converters, after the cards so the converters come first -->
   <hr class="divider divider--cards">
   <p class="intro">
-    The Pressbooks and Common Cartridge Converters turn your Pressbooks book content or LMS course content into a website using the open-source Grav CMS: future-friendly Markdown files, no database, self-hosted, and each page individually embeddable back into Canvas, Moodle, or almost any LMS via a URL parameter. That same open format also makes it easy for open publishers and OER-minded educators to keep their content publicly accessible and ready for others to reuse.
+    Sites made by the Pressbooks and Common Cartridge Converters are plain Markdown files with no database, self-hosted, and each page can be embedded back into Canvas, Moodle or almost any LMS. The same open format keeps your content publicly accessible and ready for others to reuse.
   </p>
 
-  <!-- Standard Markdown feature callout -->
-  <div class="feature-callout">
-    <span class="feature-callout-badge">NEW</span>
-    <div class="feature-callout-text">
-      <strong>Standard Markdown</strong> – the Pressbooks and Common Cartridge Converters now offer an option to skip Grav-specific shortcodes entirely, producing plain Markdown that works on most other Markdown-based platforms, not just Grav. GitHub-style alerts appear as plain blockquotes where they aren't supported. Look for the toggle in each converter's settings.
-    </div>
-  </div>
+  <!-- Standard Markdown option -->
+  <p class="intro">
+    <strong>Not using Grav?</strong> Both converters have a Standard Markdown option: plain Markdown with no Grav shortcodes, for most Markdown platforms.
+  </p>
 
   <!-- Prerequisite note -->
   <p class="intro">
@@ -637,7 +601,7 @@
 
   <!-- Origin story -->
   <p class="intro">
-    <strong>The origin story.</strong> I built the Pressbooks Converter first, to see what might be still missing from the Helios Open Reader for open textbook authors. The Common Cartridge Converter followed, doing the same for Helios Course Hub. Seeing they could also help others migrate their own content, I made them available here – and as the free Open Course Space and Open Publishing Space share the same core page types, both converters now work with them too. The Open Publishing Course Space Bridge came next, so open guides and courses can move freely between Grav and Docsify, in either direction.
+    <strong>The origin story.</strong> I built the Pressbooks Converter first, to see what might be still missing from the Helios Open Reader for open textbook authors. The Common Cartridge Converter followed, doing the same for Helios Course Hub. Seeing they could also help others migrate their own content, I made them available here – and as the free Open Course Space and Open Publishing Space share the same core page types, both converters now work with them too. The Open Publishing Course Space Bridge came next, so open guides and courses can move freely between Grav and Docsify.
   </p>
 
   <hr class="divider">
